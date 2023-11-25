@@ -1,10 +1,12 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -std=c99
 LDFLAGS = -lX11
+INSTALL_DIR = /usr/local/bin
 
 SRC = xroma.c
 OBJ = $(SRC:.c=.o)
 TARGET = xroma
+MANPAGE = xroma.1
 
 all: $(TARGET)
 
@@ -16,3 +18,11 @@ $(TARGET): $(OBJ)
 
 clean:
 	rm -f $(OBJ) $(TARGET)
+
+install: $(TARGET)
+	install -Dm755 $(TARGET) $(DESTDIR)$(INSTALL_DIR)/$(TARGET)
+	install -Dm644 $(MANPAGE) $(DESTDIR)/usr/share/man/man1/$(MANPAGE)
+
+uninstall:
+	rm -f $(DESTDIR)$(INSTALL_DIR)/$(TARGET)
+	rm -f $(DESTDIR)/usr/share/man/man1/$(MANPAGE)
