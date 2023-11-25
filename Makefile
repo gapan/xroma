@@ -24,5 +24,5 @@ install: $(TARGET)
 	install -Dm644 $(MANPAGE) $(DESTDIR)/usr/share/man/man1/$(MANPAGE)
 
 uninstall:
-	rm -f $(DESTDIR)$(PREFIX)/$(TARGET)
+	rm -f $(DESTDIR)/$(PREFIX)/$(TARGET)
 	rm -f $(DESTDIR)/usr/share/man/man1/$(MANPAGE)
