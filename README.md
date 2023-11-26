@@ -7,7 +7,8 @@ to interact with the X Window System.
 By default it reads the color information for the pixel that is
 under the mouse cursor, but you can also specify the coordinates of an
 arbitrary pixel. The output is provided by default in a set of RGB
-values (range 0-255), but you can also get it in hexadecimal format.
+values (range 0-255), but you can also get it in hexadecimal format and
+even in HSV (Hue, Saturation, Value) format.
 
 The name xroma comes from the greek word chroma, which means color. The
 "ch" part is actually written with an X in greek, which is not pronounced
@@ -34,6 +35,13 @@ Print the color information in hexadecimal format:
 ```bash
 $ xroma --hex
 #D96B5F
+```
+
+Print the color information in HSV format:
+
+```bash
+$ xroma --hsv
+212.91 76.75 89.41
 ```
 
 ## Dependencies

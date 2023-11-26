@@ -6,7 +6,7 @@ xroma \- retrieve and display color information of a pixel on the screen
 
 .SH SYNOPSIS
 .B xroma
-[\fB\-h\fR | \fB\-\-help\fR] [\fB\-\-hex\fR] [\fB\-c\fR \fIX,Y\fR]
+[\fB\-h\fR | \fB\-\-help\fR] [\fB\-\-hex\fR] [\fB\-\-hsv\fR] [\fB\-c\fR \fIX,Y\fR]
 
 .SH DESCRIPTION
 \fBxroma\fR is a command-line tool for interacting with the X Window
@@ -14,7 +14,8 @@ System to retrieve and display the color information of a pixel on the
 screen. By default it reads the color information for the pixel that is
 under the mouse cursor, but you can also specify the coordinates of an
 arbitrary pixel. The output is provided by default in a set of RGB
-values (range 0-255), but you can also get it in hexadecimal format.
+values (range 0-255), but you can also get it in hexadecimal format and
+even in HSV (Hue, Saturation, Value) format.
 
 The name xroma comes from the greek word chroma, which means color. The
 "ch" part is actually written with an X in greek, which is not pronounced
@@ -28,6 +29,10 @@ Print the help message.
 .TP
 \fB\-\-hex\fR
 Print color in hexadecimal format.
+
+.TP
+\fB\-\-hsv\fR
+Print color in HSV format.
 
 .TP
 \fB\-c, \-\-coordinates \fIX,Y\fR
