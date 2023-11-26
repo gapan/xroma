@@ -10,9 +10,10 @@ arbitrary pixel. The output is provided by default in a set of RGB
 values (range 0-255), but you can also get it in hexadecimal format and
 even in HSV (Hue, Saturation, Value) format.
 
-The name xroma comes from the greek word chroma, which means color. The
+The name xroma comes from the greek word chroma (χρώμα), which means color. The
 "ch" part is actually written with an X in greek, which is not pronounced
-like an english X, but rather somewhat like the "ch" sound in chroma.
+like an english X, but rather somewhat like the "ch" sound in chroma
+(IPA: /ˈxɾoma/).
 
 ## Example Usage
 
